@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: ArqHexagonal
+  datasource:
+    url: jdbc:postgresql://localhost:5555/arqhex_db
+    driver-class-name: org.postgresql.Driver
+    username: arqhex
+    password: admin123
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+    show-sql: true
+  jackson:
+    deserialization:
+      fail-on-unknown-properties: true
