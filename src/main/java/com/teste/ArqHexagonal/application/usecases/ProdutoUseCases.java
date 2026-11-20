@@ -2,7 +2,8 @@ package com.teste.ArqHexagonal.application.usecases;
 
 import com.teste.ArqHexagonal.domain.produto.Produto;
 import com.teste.ArqHexagonal.domain.produto.dto.ProdutoCreateDTO;
+import com.teste.ArqHexagonal.domain.produto.dto.ProdutoResponseDTO;
 
 public interface ProdutoUseCases {
-   Produto cadastrarProduto(ProdutoCreateDTO dto);
+   ProdutoResponseDTO cadastrarProduto(ProdutoCreateDTO dto);
 }
